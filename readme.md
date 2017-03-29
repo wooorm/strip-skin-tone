@@ -3,7 +3,7 @@
 Remove skin-tone (a.k.a. Fitzpatrick scale, or emoji modifiers)
 from [emoji][diversity] (🎅🏿 > 🎅).
 
-> Note: this strips all skin-tones (even `🏽` > ``).  This  makes this
+> Note: this strips all skin-tones (even `'🏽'` > `''`).  This  makes this
 > algorithm “future proof” for new emoji, use [`skin-tone`][skin-tone] if you
 > just want to strip (currently) valid skin-tones on Emoji.
 
