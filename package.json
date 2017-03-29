@@ -1,6 +1,6 @@
 {
   "name": "strip-skin-tone",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Strip skin-tones from emoji",
   "license": "MIT",
   "keywords": [
