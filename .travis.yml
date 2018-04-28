@@ -1,10 +1,11 @@
 language: node_js
 node_js:
-- '4.0'
-- '8.0'
+- lts/boron
+- node
 after_script: bash <(curl -s https://codecov.io/bash)
 deploy:
   provider: releases
+  skip_cleanup: true
   api_key:
     secure: tFM5vAS4V/gd55QXPoOc2FBZ/BHeyEex0h26M/oVieB+GJbOkjRzPSWzChKak8T/76MWMaQMGrNAywxFhoAfBtG3d0S8EP6QdF8Etmg++Z3S3uRuVfhGWJ++ipRyqJsMu+P49SgX+t0P1sECdhG5YqbG/kctKlykEfCfPWHrT5DSOy6oCYFc9zcaEnCAOo3EMzbsdLQmavF6NZ86q+c5dF+Z1W6V2iz8SZ2lQQK96quGW0Jmqq+pDyr9BBTSnr/i1giN6dxdK5VmEKCFu6bOPmnr+xoFFhhfamGa6LEWMLPHfTudrtfQTqZPj2nO3/bSPFNF32U7jtT+6VQktSsufOomA7VZXWtn2MXjlSoetKFym4GK8SctNSYbwfo4RHKrHkkWr3yhEbOXG5pQ1izIMETMEBi0tbMUvbHHYWDu7gvtdkytZJeNV+vBjLRfy9PiPwkS8dS4r0C3T7YBArk6JjGepWB5cP/JMoXZVyvosXO62Hg5rARCRSSNOPP7NM6fZ41b+yoKJdO4YSU4z50Lbp4SnszEyzteK6AZ8fJMnSYeFD0MjntMbc2ybOO7jW0uhytCMwt/+STmYrtdyAj6NZ1u9O9HBtQjPCvnJEFgPM+CHZTLidTzYC1YeAgKY2KtBE4DAQG7gL4oOsvd9D0+PWnUvByA0OvUTVQkDJwVApI=
   file:
@@ -12,4 +13,3 @@ deploy:
     - "strip-skin-tone.min.js"
   on:
     tags: true
-    node: '8.0'
