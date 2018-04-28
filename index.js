@@ -1,9 +1,9 @@
-'use strict';
+'use strict'
 
-module.exports = strip;
+module.exports = strip
 
-var re = /🏻|🏼|🏽|🏾|🏿/g;
+var re = /🏻|🏼|🏽|🏾|🏿/g
 
 function strip(val) {
-  return val.replace(re, '');
+  return val.replace(re, '')
 }

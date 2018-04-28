@@ -17,10 +17,10 @@ npm install strip-skin-tone
 ## Usage
 
 ```js
-var strip = require('strip-skin-tone');
+var strip = require('strip-skin-tone')
 
-strip('🎅🏿'); // => '🎅'
-strip('👌🏻'); // => '👌'
+strip('🎅🏿') // => '🎅'
+strip('👌🏻') // => '👌'
 ```
 
 ## License
