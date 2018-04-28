@@ -5,3 +5,4 @@ coverage/
 node_modules/
 strip-skin-tone.js
 strip-skin-tone.min.js
+yarn.lock
