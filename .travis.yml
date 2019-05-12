@@ -1,15 +1,15 @@
 language: node_js
 node_js:
-- lts/boron
-- node
+  - lts/dubnium
+  - node
 after_script: bash <(curl -s https://codecov.io/bash)
 deploy:
   provider: releases
   skip_cleanup: true
   api_key:
-    secure: tFM5vAS4V/gd55QXPoOc2FBZ/BHeyEex0h26M/oVieB+GJbOkjRzPSWzChKak8T/76MWMaQMGrNAywxFhoAfBtG3d0S8EP6QdF8Etmg++Z3S3uRuVfhGWJ++ipRyqJsMu+P49SgX+t0P1sECdhG5YqbG/kctKlykEfCfPWHrT5DSOy6oCYFc9zcaEnCAOo3EMzbsdLQmavF6NZ86q+c5dF+Z1W6V2iz8SZ2lQQK96quGW0Jmqq+pDyr9BBTSnr/i1giN6dxdK5VmEKCFu6bOPmnr+xoFFhhfamGa6LEWMLPHfTudrtfQTqZPj2nO3/bSPFNF32U7jtT+6VQktSsufOomA7VZXWtn2MXjlSoetKFym4GK8SctNSYbwfo4RHKrHkkWr3yhEbOXG5pQ1izIMETMEBi0tbMUvbHHYWDu7gvtdkytZJeNV+vBjLRfy9PiPwkS8dS4r0C3T7YBArk6JjGepWB5cP/JMoXZVyvosXO62Hg5rARCRSSNOPP7NM6fZ41b+yoKJdO4YSU4z50Lbp4SnszEyzteK6AZ8fJMnSYeFD0MjntMbc2ybOO7jW0uhytCMwt/+STmYrtdyAj6NZ1u9O9HBtQjPCvnJEFgPM+CHZTLidTzYC1YeAgKY2KtBE4DAQG7gL4oOsvd9D0+PWnUvByA0OvUTVQkDJwVApI=
+    secure: eTs6MiIQLhd4QeN42BY+T00v3vj722Rt6eLpxOfbAFhE96gJg/lMz80n6O6M2IGyyV3Ela/yDOP2ortEEElbf29m0BofSUjcgfDJOyTIlH5REJc1zmD4FeeoK9mUMGmqTfpa7C0xlPUF+OFqRkRmre8kDoAubG55f0KfWIZsxAH/6jnjU884+clCT1rmHKUa2KRhHRIuqCu56/5gcEekYeTlTfv+bSWcjB/fQCPzU+1aemOsN7bi1M09cfaFLdlsd8RBPuL1gMRd8ZqCn6bDqRaTmQBPpfl2xJB7AONL4GkxM+GWt14WoyY32+ChDsAjBY3myDU+z3ayr4ZVQwiIz6WM3lyz579jRIZQF7/NA1r3NmEWCtTluKTkolMbFXu3h+TmI1NuYaMLAoGsAkhkGa7HU1nn2RPhTcF2qj8/KZyoQIMQ5wRj22WIAIC4449tgvW9gt8SWJMaSuPVZn15kcNUABBSQKG+kO3c2G66AweNEm/TpN3EQCK+8R1NudFLpO84BUFSsfo65E7KERvWtYul7kFZEULEA69shhS6qRXTeCVbOlrE0Q1vfTPr3HQqWtC50ZW4CKEoDJ6eDkp0KPXIwyWffy2QA9BRNhkXTEnBl22D+E05sp+KLFMbA3fjfJrtismHDSTZCg/DgyrMcSGwSi4uT7GcAA7KvbCIOH0=
   file:
-    - "strip-skin-tone.js"
-    - "strip-skin-tone.min.js"
+    - 'strip-skin-tone.js'
+    - 'strip-skin-tone.min.js'
   on:
     tags: true
