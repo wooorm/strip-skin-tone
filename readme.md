@@ -41,8 +41,8 @@ strip('👌🏻') // => '👌'
 
 [license]: license
 
-[author]: http://wooorm.com
+[author]: https://wooorm.com
 
-[diversity]: http://unicode.org/reports/tr51/#Diversity_Implementations
+[diversity]: https://unicode.org/reports/tr51/#Diversity_Implementations
 
 [skin-tone]: https://github.com/sindresorhus/skin-tone
