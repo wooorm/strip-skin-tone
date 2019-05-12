@@ -1,4 +1,9 @@
-# strip-skin-tone [![Build Status][travis-badge]][travis] [![Coverage Status][codecov-badge]][codecov]
+# strip-skin-tone
+
+[![Build][build-badge]][build]
+[![Coverage][coverage-badge]][coverage]
+[![Downloads][downloads-badge]][downloads]
+[![Size][size-badge]][size]
 
 Remove skin-tone (a.k.a. Fitzpatrick scale, or emoji modifiers)
 from [emoji][diversity] (🎅🏿 > 🎅).
@@ -29,13 +34,21 @@ strip('👌🏻') // => '👌'
 
 <!-- Definitions -->
 
-[travis-badge]: https://img.shields.io/travis/wooorm/strip-skin-tone.svg
+[build-badge]: https://img.shields.io/travis/wooorm/strip-skin-tone.svg
 
-[travis]: https://travis-ci.org/wooorm/strip-skin-tone
+[build]: https://travis-ci.org/wooorm/strip-skin-tone
 
-[codecov-badge]: https://img.shields.io/codecov/c/github/wooorm/strip-skin-tone.svg
+[coverage-badge]: https://img.shields.io/codecov/c/github/wooorm/strip-skin-tone.svg
 
-[codecov]: https://codecov.io/github/wooorm/strip-skin-tone
+[coverage]: https://codecov.io/github/wooorm/strip-skin-tone
+
+[downloads-badge]: https://img.shields.io/npm/dm/strip-skin-tone.svg
+
+[downloads]: https://www.npmjs.com/package/strip-skin-tone
+
+[size-badge]: https://img.shields.io/bundlephobia/minzip/strip-skin-tone.svg
+
+[size]: https://bundlephobia.com/result?p=strip-skin-tone
 
 [npm]: https://docs.npmjs.com/cli/install
 
