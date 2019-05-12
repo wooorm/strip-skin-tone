@@ -31,7 +31,7 @@
     "xo": "^0.20.0"
   },
   "scripts": {
-    "format": "remark . -qfo && prettier --write '**/*.js' && xo --fix",
+    "format": "remark . -qfo && prettier --write \"**/*.js\" && xo --fix",
     "build-bundle": "browserify index.js --bare -s stripSkinTone > strip-skin-tone.js",
     "build-mangle": "esmangle strip-skin-tone.js > strip-skin-tone.min.js",
     "build": "npm run build-bundle && npm run build-mangle",
