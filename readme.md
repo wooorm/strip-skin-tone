@@ -8,18 +8,17 @@
 Remove skin-tone (a.k.a. Fitzpatrick scale, or emoji modifiers)
 from [emoji][diversity] (🎅🏿 > 🎅).
 
-> Note: this strips skin-tones, use [`skin-tone`][skin-tone] to also set
-> tones.
+> Note: this strips skin-tones, use [`skin-tone`][skin-tone] to also set tones.
 
-## Installation
+## Install
 
 [npm][]:
 
-```bash
+```sh
 npm install strip-skin-tone
 ```
 
-## Usage
+## Use
 
 ```js
 var strip = require('strip-skin-tone')
