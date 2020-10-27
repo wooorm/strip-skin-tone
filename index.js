@@ -4,6 +4,6 @@ module.exports = strip
 
 var re = /🏻|🏼|🏽|🏾|🏿/g
 
-function strip(val) {
-  return val.replace(re, '')
+function strip(value) {
+  return value.replace(re, '')
 }

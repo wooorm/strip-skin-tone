@@ -1,3 +1,5 @@
 coverage/
 strip-skin-tone.js
 strip-skin-tone.min.js
+*.json
+*.md
