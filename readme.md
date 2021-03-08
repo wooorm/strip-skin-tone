@@ -33,9 +33,9 @@ strip('👌🏻') // => '👌'
 
 <!-- Definitions -->
 
-[build-badge]: https://img.shields.io/travis/wooorm/strip-skin-tone.svg
+[build-badge]: https://github.com/wooorm/strip-skin-tone/workflows/main/badge.svg
 
-[build]: https://travis-ci.org/wooorm/strip-skin-tone
+[build]: https://github.com/wooorm/strip-skin-tone/actions
 
 [coverage-badge]: https://img.shields.io/codecov/c/github/wooorm/strip-skin-tone.svg
 
