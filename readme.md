@@ -12,6 +12,9 @@ from [emoji][diversity] (🎅🏿 > 🎅).
 
 ## Install
 
+This package is ESM only: Node 12+ is needed to use it and it must be `import`ed
+instead of `require`d.
+
 [npm][]:
 
 ```sh
@@ -20,12 +23,22 @@ npm install strip-skin-tone
 
 ## Use
 
+This package exports the following identifiers: `stripSkinTone`.
+There is no default export.
+
 ```js
-var strip = require('strip-skin-tone')
+import {stripSkinTone} from 'strip-skin-tone'
 
 strip('🎅🏿') // => '🎅'
 strip('👌🏻') // => '👌'
 ```
+
+## API
+
+### `stripSkinTone(value)`
+
+Strip skin tone modifiers from `value` (`string`).
+Returns `string`.
 
 ## License
 

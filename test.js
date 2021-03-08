@@ -1,16 +1,14 @@
-'use strict'
+import test from 'tape'
+import {stripSkinTone} from './index.js'
 
-var test = require('tape')
-var strip = require('.')
+test('stripSkinTone', function (t) {
+  t.equal(stripSkinTone('🎅🏿'), '🎅')
+  t.equal(stripSkinTone('👎🏾'), '👎')
+  t.equal(stripSkinTone('👱🏽'), '👱')
+  t.equal(stripSkinTone('👰🏼'), '👰')
+  t.equal(stripSkinTone('👌🏻'), '👌')
 
-test('strip', function (t) {
-  t.equal(strip('🎅🏿'), '🎅')
-  t.equal(strip('👎🏾'), '👎')
-  t.equal(strip('👱🏽'), '👱')
-  t.equal(strip('👰🏼'), '👰')
-  t.equal(strip('👌🏻'), '👌')
-
-  t.equal(strip('🎅🏿👎🏾👱🏽👰🏼👌🏻'), '🎅👎👱👰👌')
+  t.equal(stripSkinTone('🎅🏿👎🏾👱🏽👰🏼👌🏻'), '🎅👎👱👰👌')
 
   t.end()
 })

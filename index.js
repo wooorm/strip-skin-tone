@@ -1,7 +1,3 @@
-'use strict'
-
-module.exports = strip
-
-function strip(value) {
+export function stripSkinTone(value) {
   return value.replace(/🏻|🏼|🏽|🏾|🏿/g, '')
 }
