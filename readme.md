@@ -5,40 +5,94 @@
 [![Downloads][downloads-badge]][downloads]
 [![Size][size-badge]][size]
 
-Remove skin-tone (a.k.a. Fitzpatrick scale, or emoji modifiers)
-from [emoji][diversity] (🎅🏿 > 🎅).
+Strip [skin tone modifiers][diversity] (as in Fitzpatrick scale) from emoji
+(🎅🏿 to 🎅).
 
-> Note: this strips skin-tones, use [`skin-tone`][skin-tone] to also set tones.
+## Contents
+
+*   [Install](#install)
+*   [Use](#use)
+*   [API](#api)
+    *   [`stripSkinTone(value)`](#stripskintonevalue)
+*   [Types](#types)
+*   [Compatibility](#compatibility)
+*   [Security](#security)
+*   [Related](#related)
+*   [Contribute](#contribute)
+*   [License](#license)
 
 ## Install
 
-This package is ESM only: Node 12+ is needed to use it and it must be `import`ed
-instead of `require`d.
-
-[npm][]:
+This package is [ESM only][esm].
+In Node.js (version 12.20+, 14.14+, or 16.0+), install with [npm][]:
 
 ```sh
 npm install strip-skin-tone
 ```
 
-## Use
+In Deno with [Skypack][]:
 
-This package exports the following identifiers: `stripSkinTone`.
-There is no default export.
+```js
+import {stripSkinTone} from 'https://cdn.skypack.dev/strip-skin-tone@2?dts'
+```
+
+In browsers with [Skypack][]:
+
+```html
+<script type="module">
+  import {stripSkinTone} from 'https://cdn.skypack.dev/strip-skin-tone@2?min'
+</script>
+```
+
+## Use
 
 ```js
 import {stripSkinTone} from 'strip-skin-tone'
 
-strip('🎅🏿') // => '🎅'
-strip('👌🏻') // => '👌'
+stripSkinTone('🎅🏿') // => '🎅'
+stripSkinTone('👌🏻') // => '👌'
 ```
 
 ## API
 
+This package exports the following identifiers: `stripSkinTone`.
+There is no default export.
+
 ### `stripSkinTone(value)`
 
-Strip skin tone modifiers from `value` (`string`).
-Returns `string`.
+Strip skin tone modifiers from `value`.
+
+###### Parameters
+
+*   `value` (`string`) — value to clean of skin tone modifiers
+
+###### Returns
+
+`string` — cleaned value.
+
+## Types
+
+This package is fully typed with [TypeScript][].
+
+## Compatibility
+
+This package is at least compatible with all maintained versions of Node.js.
+As of now, that is Node.js 12.20+, 14.14+, and 16.0+.
+It also works in Deno and modern browsers.
+
+## Security
+
+This package is safe.
+
+## Related
+
+*   [`sindresorhus/skin-tone`](https://github.com/sindresorhus/skin-tone)
+    — change the skin tone of emoji
+
+## Contribute
+
+Yes please!
+See [How to Contribute to Open Source][contribute].
 
 ## License
 
@@ -68,6 +122,12 @@ Returns `string`.
 
 [author]: https://wooorm.com
 
-[diversity]: https://unicode.org/reports/tr51/#Diversity_Implementations
+[skypack]: https://www.skypack.dev
 
-[skin-tone]: https://github.com/sindresorhus/skin-tone
+[esm]: https://gist.github.com/sindresorhus/a39789f98801d908bbc7ff3ecc99d99c
+
+[typescript]: https://www.typescriptlang.org
+
+[contribute]: https://opensource.guide/how-to-contribute/
+
+[diversity]: https://unicode.org/reports/tr51/#Diversity_Implementations

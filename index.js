@@ -1,5 +1,6 @@
 /**
- * Strip skin tone modifiers from `value`.
+ * Strip [skin tone modifiers][diversity] (as in Fitzpatrick scale) from emoji
+ * (🎅🏿 to 🎅).
  *
  * @param {string} value
  *   Value to clean of skin tone modifiers.
