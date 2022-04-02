@@ -30,17 +30,17 @@ In Node.js (version 12.20+, 14.14+, or 16.0+), install with [npm][]:
 npm install strip-skin-tone
 ```
 
-In Deno with [Skypack][]:
+In Deno with [`esm.sh`][esmsh]:
 
 ```js
-import {stripSkinTone} from 'https://cdn.skypack.dev/strip-skin-tone@2?dts'
+import {stripSkinTone} from 'https://esm.sh/strip-skin-tone@2'
 ```
 
-In browsers with [Skypack][]:
+In browsers with [`esm.sh`][esmsh]:
 
 ```html
 <script type="module">
-  import {stripSkinTone} from 'https://cdn.skypack.dev/strip-skin-tone@2?min'
+  import {stripSkinTone} from 'https://esm.sh/strip-skin-tone@2?bundle'
 </script>
 ```
 
@@ -122,7 +122,7 @@ See [How to Contribute to Open Source][contribute].
 
 [author]: https://wooorm.com
 
-[skypack]: https://www.skypack.dev
+[esmsh]: https://esm.sh
 
 [esm]: https://gist.github.com/sindresorhus/a39789f98801d908bbc7ff3ecc99d99c
 
