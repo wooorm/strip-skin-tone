@@ -5,11 +5,12 @@
 [![Downloads][downloads-badge]][downloads]
 [![Size][size-badge]][size]
 
-Strip [skin tone modifiers][diversity] (as in Fitzpatrick scale) from emoji
-(🎅🏿 to 🎅).
+Strip skin tone modifiers from emoji (🎅🏿 to 🎅).
 
 ## Contents
 
+*   [What is this?](#what-is-this)
+*   [When should I use this?](#when-should-i-use-this)
 *   [Install](#install)
 *   [Use](#use)
 *   [API](#api)
@@ -21,10 +22,21 @@ Strip [skin tone modifiers][diversity] (as in Fitzpatrick scale) from emoji
 *   [Contribute](#contribute)
 *   [License](#license)
 
+## What is this?
+
+This package removes [skin tone modifiers][diversity] (Fitzpatrick scale)
+from a string.
+
+## When should I use this?
+
+You can use this package to remove skin tones.
+You can alternatively use [`sindresorhus/skin-tone`][skin-tone] when you want
+to set skin tones.
+
 ## Install
 
 This package is [ESM only][esm].
-In Node.js (version 12.20+, 14.14+, or 16.0+), install with [npm][]:
+In Node.js (version 14.14+, 16.0+), install with [npm][]:
 
 ```sh
 npm install strip-skin-tone
@@ -55,12 +67,12 @@ stripSkinTone('👌🏻') // => '👌'
 
 ## API
 
-This package exports the following identifiers: `stripSkinTone`.
+This package exports the identifier `stripSkinTone`.
 There is no default export.
 
 ### `stripSkinTone(value)`
 
-Strip skin tone modifiers from `value`.
+Strip skin tone modifiers (as in Fitzpatrick scale) from `value` (`string`).
 
 ###### Parameters
 
@@ -68,7 +80,7 @@ Strip skin tone modifiers from `value`.
 
 ###### Returns
 
-`string` — cleaned value.
+Cleaned value (`string`).
 
 ## Types
 
@@ -77,7 +89,7 @@ This package is fully typed with [TypeScript][].
 ## Compatibility
 
 This package is at least compatible with all maintained versions of Node.js.
-As of now, that is Node.js 12.20+, 14.14+, and 16.0+.
+As of now, that is Node.js 14.14+ and 16.0+.
 It also works in Deno and modern browsers.
 
 ## Security
@@ -131,3 +143,5 @@ See [How to Contribute to Open Source][contribute].
 [contribute]: https://opensource.guide/how-to-contribute/
 
 [diversity]: https://unicode.org/reports/tr51/#Diversity_Implementations
+
+[skin-tone]: https://github.com/sindresorhus/skin-tone
